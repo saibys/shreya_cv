@@ -2,16 +2,10 @@
 // Show popup after 5 seconds
 setTimeout(() => {
   document.getElementById('popup').style.display = 'block';
-}, 5000);
+}, 10000);
 
 // Close popup when clicking the X button
-document.querySelector('.close-btn').addEventListener('click', () => {
-  document.getElementById('popup').style.display = 'none';
-});
 
-// Close popup when clicking outside
-window.addEventListener('click', (e) => {
-  if (e.target == document.getElementById('popup')) {
-    document.getElementById('popup').style.display = 'none';
-  }
+document.querySelector('.close-btn').addEventListener('click', () => {
+    window.location.href = 'https://api.whatsapp.com/send?phone=918295139188&text=i%20am%20a%20student';
 });
