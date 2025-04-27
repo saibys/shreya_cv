@@ -23,6 +23,24 @@ header {
   margin: 0 auto;
 }
 
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2c3e50;
+}
+
 .syllabus-cards {
   padding: 2rem;
   background: #f5f6fa;
